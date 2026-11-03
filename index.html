@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Noé Bardin — Communication × IA</title>
+  <meta name="description" content="Portfolio de Noé Bardin, étudiant en MBA Digital Business & Marketing à l'EFAP (majeure Data & IA). Contenu, création augmentée par l'IA, stratégie digitale. Disponible en alternance.">
+  <meta property="og:title" content="Noé Bardin — Communication × IA">
+  <meta property="og:description" content="Contenu, création augmentée par l'IA, stratégie digitale. Disponible en alternance.">
+  <meta property="og:image" content="assets/affiche-double-or.jpg">
+  <meta name="theme-color" content="#07070a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"><span class="cursor-label"></span></div>
+
+  <header class="nav">
+    <a href="#top" class="logo">NB<sup>/26</sup></a>
+    <nav>
+      <a href="#studio">Studio</a>
+      <a href="#generique">Parcours</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <span class="status"><i></i>Disponible en alternance</span>
+  </header>
+
+  <main id="top">
+    <!-- HERO : le nom se "génère" à partir du bruit, comme une image de diffusion -->
+    <section class="hero" id="hero">
+      <canvas id="diffusion" aria-hidden="true"></canvas>
+      <h1 class="sr-only">Noé Bardin</h1>
+      <div class="hero-meta">
+        <div class="prompt">
+          <span class="prompt-caret">&gt;</span>
+          <span id="prompt-text"></span><span class="blink">_</span>
+        </div>
+        <div class="steps mono"><span id="step">0</span>/30 · seed 401</div>
+      </div>
+      <p class="hero-tag">
+        Communicant <em>créatif</em>, augmenté par l'IA.<br>
+        MBA Digital Business &amp; Marketing — EFAP, majeure Data &amp; IA.
+      </p>
+      <a href="#chiffre" class="scroll-cue mono">défiler ↓</a>
+    </section>
+
+    <!-- MANIFESTE -->
+    <section class="marquee" aria-label="Domaines">
+      <div class="marquee-row"><span>Communication ✦ IA générative ✦ Contenu ✦ Stratégie digitale ✦ YouTube ✦ Design ✦&nbsp;</span><span aria-hidden="true">Communication ✦ IA générative ✦ Contenu ✦ Stratégie digitale ✦ YouTube ✦ Design ✦&nbsp;</span></div>
+      <div class="marquee-row reverse outline"><span>Prompter ✦ Composer ✦ Publier ✦ Mesurer ✦ Recommencer ✦&nbsp;</span><span aria-hidden="true">Prompter ✦ Composer ✦ Publier ✦ Mesurer ✦ Recommencer ✦&nbsp;</span></div>
+    </section>
+
+    <!-- LE CHIFFRE -->
+    <section class="chiffre" id="chiffre">
+      <div class="chiffre-bg"><img src="assets/spica-guepard.jpg" alt=""></div>
+      <div class="chiffre-inner">
+        <p class="kicker mono">Spica Productions — chaînes YouTube</p>
+        <div class="big-number" id="counter">0</div>
+        <p class="chiffre-text">abonnés. Le cap franchi par l'une des chaînes YouTube que je pilote&nbsp;: <em>miniatures, contenus, référencement, communauté.</em></p>
+      </div>
+    </section>
+
+    <!-- STUDIO : défilement horizontal -->
+    <section class="studio" id="studio">
+      <div class="studio-head">
+        <p class="kicker mono">02 — Le studio</p>
+        <h2>Des images qui <em>arrêtent</em> le scroll.</h2>
+      </div>
+      <div class="track" id="track">
+        <!-- les cartes sont générées depuis PROJECTS dans main.js -->
+      </div>
+      <div class="studio-progress"><span id="studio-bar"></span></div>
+    </section>
+
+    <!-- CE QUE J'APPORTE -->
+    <section class="apport" id="apport">
+      <p class="kicker mono">03 — Ce que j'apporte à une équipe</p>
+      <ol class="apport-list">
+        <li>
+          <span class="idx mono">01</span>
+          <h3>Contenu &amp; réseaux sociaux</h3>
+          <p>Pilotage de chaînes YouTube, community management, miniatures et vidéos qui donnent envie de cliquer.</p>
+        </li>
+        <li>
+          <span class="idx mono">02</span>
+          <h3>Création augmentée par l'IA</h3>
+          <p>Visuels, génériques animés, déclinaisons de campagne : plus d'idées testées, plus vite, sans perdre la direction artistique.</p>
+        </li>
+        <li>
+          <span class="idx mono">03</span>
+          <h3>Stratégie digitale &amp; data</h3>
+          <p>SEO, veille, bases de contacts et relations presse, analyse des tendances : la majeure Data &amp; IA de l'EFAP en pratique.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- PARCOURS façon générique de film -->
+    <section class="generique" id="generique">
+      <div class="credits" id="credits">
+        <p class="kicker mono">04 — Générique</p>
+        <div class="credit-block">
+          <span class="role">Formation</span>
+          <p class="name">MBA Digital Business &amp; Marketing<br><em>majeure Data &amp; IA</em></p>
+          <span class="where">EFAP Paris · 2025 — aujourd'hui</span>
+          <p class="name small">Bachelor Communication</p>
+          <span class="where">SUPDEPUB Paris · 2020 — 2024</span>
+        </div>
+        <div class="credit-block">
+          <span class="role">Expériences</span>
+          <p class="name">Assistant communication digitale</p>
+          <span class="where">Spica Productions · 2026</span>
+          <p class="name small">Chef de projet événementiel</p>
+          <span class="where">HUB Institute · 2024</span>
+          <p class="name small">Assistant communication</p>
+          <span class="where">Agence Open2Europe · 2022</span>
+          <p class="name small">Assistant communication</p>
+          <span class="where">SPIE ICS · 2021</span>
+        </div>
+        <div class="credit-block">
+          <span class="role">Engagement</span>
+          <p class="name small">Épicerie solidaire étudiante</p>
+          <span class="where">redistribution d'invendus aux étudiants</span>
+        </div>
+        <div class="credit-block">
+          <span class="role">Avec la participation de</span>
+          <p class="tools">Photoshop · InDesign · Midjourney · Claude · Seedance · Pack Office</p>
+        </div>
+        <div class="credit-block">
+          <span class="role">Langues</span>
+          <p class="name small">Français · Anglais B2–C1</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <p class="kicker mono">05 — Prochaine scène</p>
+      <h2 class="contact-title" id="contact-title">On en parle&nbsp;?</h2>
+      <p class="contact-sub">Alternance · 1 semaine d'école par mois · Paris &amp; Boulogne · disponible tout de suite</p>
+      <div class="contact-actions">
+        <button class="magnet btn-mail" id="mail-btn" data-cursor="copier">
+          <span id="mail-label">noe_bardin@icloud.com</span>
+        </button>
+        <a class="magnet btn-ghost" id="linkedin-btn" target="_blank" rel="noopener" data-cursor="ouvrir">LinkedIn ↗</a>
+        <a class="magnet btn-ghost" id="cv-btn" download data-cursor="télécharger">CV ↓</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot mono">
+    <span>© 2026 Noé Bardin — Boulogne-Billancourt</span>
+    <span>Site conçu avec l'IA, dirigé par un humain.</span>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
