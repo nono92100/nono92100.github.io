@@ -1,6 +1,6 @@
 // ---------- Réglages : à compléter ----------
 const CONFIG = {
-  email: "noe_bardin@icloud.com",
+  email: "noe.bardin@efap.com",
   linkedin: "", // ex. "https://www.linkedin.com/in/noe-bardin" : le bouton reste caché tant que c'est vide
   cv: "",       // ex. "assets/CV_Noe_Bardin_Alternance_Marketing_IA.pdf"
 };
